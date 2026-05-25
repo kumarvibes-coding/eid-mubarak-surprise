@@ -733,9 +733,9 @@
 <!-- Scroll Progress -->
 <div id="scroll-progress"></div>
 
-<!-- Audio -->
-<audio id="bg-audio" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/10/10/audio_6f41cdff84.mp3" type="audio/mpeg">
+<!-- Audio — multiple fallback sources for reliability -->
+<audio id="bg-audio" loop crossorigin="anonymous">
+  <source src="https://cdn.pixabay.com/audio/2026/02/19/audio_4816c0f8f4.mp3" type="audio/mpeg">
 </audio>
 <canvas id="confetti-canvas"></canvas>
 
@@ -939,10 +939,10 @@
           <small style="font-size:0.85rem; color:var(--text-muted); font-style:normal;">— Surah Al-Kawthar (108:1–3)</small>
         </blockquote>
         <p class="story-body">
-          Eid Al-Adha — the Festival of Sacrifice — commemorates the profound devotion of Prophet Ibrahim ﷺ, who demonstrated absolute surrender to Allah's will. It is a celebration of faith, gratitude, and the timeless values of compassion and sharing.
+          Eid Al-Adha — Qurbani ka Tyohaar — Hazrat Ibrahim ﷺ ki gehri aqeedat ki yaad dilaata hai, jinhon ne Allah ki marzi ke aage mukammal taur par sar jhuka diya. Yeh iman, shukr, aur reham dili aur baatne ki timeless values ka celebration hai.
         </p>
         <p class="story-body" style="margin-top:1.2rem;">
-          The act of Qurbani is not merely ritual — it is a reminder that true devotion requires sacrifice, that generosity transforms the soul, and that our connection to the Divine is renewed in moments of pure surrender.
+          Qurbani ka amal sirf ek rasm nahi — yeh ek yaad dahaani hai ke sachchi aqeedat ke liye qurbani zaroori hai, ke sakhawat insaan ki rooh ko badal deti hai, aur ke Allah se hamara rishta un lamhon mein tajdeed hota hai jab hum poori tarah surrender kar dete hain.
         </p>
         <div class="story-pills">
           <span class="story-pill">Faith</span>
@@ -967,21 +967,8 @@
     <div class="gallery-item" data-title="Golden Twilight" data-desc="When the crescent moon rises and the sky turns to liquid gold — the most magical moment of Eid eve." onclick="openLightbox(this)">
       <div class="gallery-inner">
         <div class="gallery-bg" style="background: radial-gradient(ellipse at 30% 40%, #4A2F00 0%, #1A0D00 40%, #0A0506 100%); min-height:300px;">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
-            <defs>
-              <radialGradient id="g1" cx="30%" cy="35%"><stop offset="0%" stop-color="#C9A84C" stop-opacity="0.4"/><stop offset="100%" stop-color="transparent"/></radialGradient>
-            </defs>
-            <rect width="400" height="300" fill="url(#g1)"/>
-            <text x="200" y="80" text-anchor="middle" font-size="60" fill="#C9A84C" opacity="0.9" filter="url(#glow2)">☾</text>
-            <text x="80" y="60" font-size="14" fill="#FFE87C" opacity="0.6">★</text>
-            <text x="300" y="50" font-size="10" fill="#FFE87C" opacity="0.5">★</text>
-            <text x="340" y="100" font-size="8" fill="#FFE87C" opacity="0.7">★</text>
-            <text x="50" y="120" font-size="12" fill="#FFE87C" opacity="0.4">★</text>
-            <text x="180" y="140" font-size="6" fill="#FFE87C" opacity="0.5">★</text>
-            <!-- Silhouette domes -->
-            <path d="M0,240 Q50,200 100,230 Q130,210 160,230 Q190,200 220,230 Q260,200 300,230 Q340,200 400,230 L400,300 L0,300 Z" fill="rgba(0,0,0,0.8)"/>
-            <path d="M150,230 Q175,195 200,230 Z" fill="rgba(0,0,0,0.8)"/>
-          </svg>
+         <div class="gallery-bg" style="background-image: url('https://media.istockphoto.com/id/2262437800/photo/an-ornate-glowing-arabic-lantern-sits-on-the-desert-sand-dunes-under-a-beautiful-sunset-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=fPsDMKOXl8p3OO_Z-MiJ7AtX1yLSG7S8Sjx1_tcxa8Q='); background-size: cover;"></div>
+         
         </div>
         <div class="gallery-overlay">
           <div class="gallery-overlay-text">Golden Twilight</div>
@@ -991,35 +978,8 @@
     <div class="gallery-item" data-title="The Sacred Lanterns" data-desc="Lanterns of every hue sway gently in the Eid breeze, carrying our prayers skyward into the infinite heavens." onclick="openLightbox(this)">
       <div class="gallery-inner">
         <div class="gallery-bg" style="background: linear-gradient(135deg, #0A0318 0%, #1A0A30 100%); min-height:200px;">
-          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
-            <!-- Lanterns -->
-            <g transform="translate(80,20)" opacity="0.9">
-              <line x1="20" y1="0" x2="20" y2="15" stroke="#C9A84C" stroke-width="1"/>
-              <ellipse cx="20" cy="20" rx="12" ry="5" fill="#C9A84C" opacity="0.3"/>
-              <rect x="8" y="20" width="24" height="50" rx="12" fill="#C9A84C" opacity="0.6"/>
-              <ellipse cx="20" cy="70" rx="12" ry="5" fill="#C9A84C" opacity="0.3"/>
-              <text x="20" y="52" text-anchor="middle" font-size="16" fill="#FFE87C">✦</text>
-            </g>
-            <g transform="translate(180,0)" opacity="0.8">
-              <line x1="20" y1="0" x2="20" y2="15" stroke="#C9A84C" stroke-width="1"/>
-              <ellipse cx="20" cy="20" rx="15" ry="6" fill="#8B6914" opacity="0.4"/>
-              <rect x="5" y="20" width="30" height="65" rx="15" fill="#8B6914" opacity="0.7"/>
-              <ellipse cx="20" cy="85" rx="15" ry="6" fill="#8B6914" opacity="0.4"/>
-              <text x="20" y="58" text-anchor="middle" font-size="18" fill="#FFE87C">☾</text>
-            </g>
-            <g transform="translate(290,30)" opacity="0.75">
-              <line x1="18" y1="0" x2="18" y2="12" stroke="#C9A84C" stroke-width="1"/>
-              <ellipse cx="18" cy="17" rx="11" ry="4" fill="#C9A84C" opacity="0.3"/>
-              <rect x="7" y="17" width="22" height="45" rx="11" fill="#C9A84C" opacity="0.5"/>
-              <ellipse cx="18" cy="62" rx="11" ry="4" fill="#C9A84C" opacity="0.3"/>
-              <text x="18" y="47" text-anchor="middle" font-size="14" fill="#FFE87C">★</text>
-            </g>
-            <!-- Stars -->
-            <text x="30" y="40" font-size="8" fill="#FFE87C" opacity="0.5">★</text>
-            <text x="370" y="60" font-size="6" fill="#FFE87C" opacity="0.4">★</text>
-            <text x="150" y="30" font-size="5" fill="#FFE87C" opacity="0.6">★</text>
-            <text x="260" y="20" font-size="7" fill="#FFE87C" opacity="0.5">★</text>
-          </svg>
+          <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1679033932050-831ace7a226f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFRoZSUyMFNhY3JlZCUyMExhbnRlcm5zfGVufDB8fDB8fHww'); background-size: cover;"></div>
+          
         </div>
         <div class="gallery-overlay">
           <div class="gallery-overlay-text">The Sacred Lanterns</div>
@@ -1029,34 +989,9 @@
     <div class="gallery-item" data-title="Moment of Prayer" data-desc="In the stillness of pre-dawn Fajr, thousands bow together — a ocean of devotion, moving as one heart." onclick="openLightbox(this)">
       <div class="gallery-inner">
         <div class="gallery-bg" style="background: linear-gradient(180deg, #030208 0%, #0D0520 60%, #1A0A10 100%); min-height:200px;">
-          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
-            <!-- Prayer rows silhouette -->
-            <g fill="rgba(201,168,76,0.25)">
-              <ellipse cx="50" cy="160" rx="18" ry="22"/>
-              <ellipse cx="110" cy="160" rx="18" ry="22"/>
-              <ellipse cx="170" cy="160" rx="18" ry="22"/>
-              <ellipse cx="230" cy="160" rx="18" ry="22"/>
-              <ellipse cx="290" cy="160" rx="18" ry="22"/>
-              <ellipse cx="350" cy="160" rx="18" ry="22"/>
-            </g>
-            <g fill="rgba(201,168,76,0.15)">
-              <ellipse cx="80" cy="180" rx="18" ry="22"/>
-              <ellipse cx="140" cy="180" rx="18" ry="22"/>
-              <ellipse cx="200" cy="180" rx="18" ry="22"/>
-              <ellipse cx="260" cy="180" rx="18" ry="22"/>
-              <ellipse cx="320" cy="180" rx="18" ry="22"/>
-            </g>
-            <!-- Glow from above -->
-            <radialGradient id="prayerGlow" cx="50%" cy="20%" r="50%">
-              <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.15"/>
-              <stop offset="100%" stop-color="transparent"/>
-            </radialGradient>
-            <rect width="400" height="200" fill="url(#prayerGlow)"/>
-            <!-- Stars -->
-            <text x="200" y="30" text-anchor="middle" font-size="40" fill="#C9A84C" opacity="0.3">✦</text>
-            <text x="80" y="50" font-size="10" fill="#FFE87C" opacity="0.5">★</text>
-            <text x="330" y="40" font-size="8" fill="#FFE87C" opacity="0.4">★</text>
-          </svg>
+          <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1683828936768-4ad048702241?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fG1vbWVudCUyMG9mJTIwcHJheWVzJTIwZWlkfGVufDB8fDB8fHww'); background-size: cover;">
+
+          </div>
         </div>
         <div class="gallery-overlay">
           <div class="gallery-overlay-text">Moment of Prayer</div>
@@ -1066,25 +1001,7 @@
     <div class="gallery-item" data-title="Feast & Fellowship" data-desc="Tables laden with the finest dishes, the aroma of spices in the air, surrounded by the people we love most." onclick="openLightbox(this)">
       <div class="gallery-inner">
         <div class="gallery-bg" style="background: linear-gradient(135deg, #1A0A06 0%, #0A0306 100%); min-height:200px;">
-          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
-            <!-- Table -->
-            <ellipse cx="200" cy="140" rx="150" ry="40" fill="rgba(139,105,20,0.2)" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-            <!-- Dishes -->
-            <circle cx="200" cy="130" r="35" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-            <circle cx="130" cy="135" r="25" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-            <circle cx="270" cy="135" r="25" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-            <text x="200" y="137" text-anchor="middle" font-size="24" fill="#C9A84C" opacity="0.7">🍽</text>
-            <!-- Candles -->
-            <rect x="100" y="95" width="6" height="30" fill="#C9A84C" opacity="0.4"/>
-            <ellipse cx="103" cy="93" rx="4" ry="6" fill="#FFE87C" opacity="0.8"/>
-            <rect x="296" y="95" width="6" height="30" fill="#C9A84C" opacity="0.4"/>
-            <ellipse cx="299" cy="93" rx="4" ry="6" fill="#FFE87C" opacity="0.8"/>
-            <!-- Glow from candles -->
-            <radialGradient id="candleGlow1" cx="25%" cy="35%"><stop offset="0%" stop-color="#FFE87C" stop-opacity="0.15"/><stop offset="100%" stop-color="transparent"/></radialGradient>
-            <radialGradient id="candleGlow2" cx="75%" cy="35%"><stop offset="0%" stop-color="#FFE87C" stop-opacity="0.15"/><stop offset="100%" stop-color="transparent"/></radialGradient>
-            <rect width="400" height="200" fill="url(#candleGlow1)"/>
-            <rect width="400" height="200" fill="url(#candleGlow2)"/>
-          </svg>
+          <div class="gallery-bg" style="background-image: url('https://media.istockphoto.com/id/2272900212/photo/saudi-men-and-boys-eating-from-communal-dish.jpg?s=612x612&w=0&k=20&c=bq4EolgRdy83g9LeXl6bulDqVA8RBwY3o-xo-QvXUMs='); background-size: cover;"></div>
         </div>
         <div class="gallery-overlay">
           <div class="gallery-overlay-text">Feast & Fellowship</div>
@@ -1094,21 +1011,7 @@
     <div class="gallery-item" data-title="Children's Delight" data-desc="Their eyes wide with wonder, hearts full of excitement — the pure joy of Eid seen through innocent eyes." onclick="openLightbox(this)">
       <div class="gallery-inner">
         <div class="gallery-bg" style="background: linear-gradient(135deg, #0A1A08 0%, #050A0A 100%); min-height:200px;">
-          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
-            <!-- Balloons -->
-            <circle cx="120" cy="80" r="35" fill="rgba(201,168,76,0.3)" stroke="rgba(201,168,76,0.5)" stroke-width="1"/>
-            <line x1="120" y1="115" x2="120" y2="160" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-            <circle cx="220" cy="60" r="40" fill="rgba(139,105,20,0.3)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
-            <line x1="220" y1="100" x2="220" y2="160" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-            <circle cx="300" cy="85" r="30" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-            <line x1="300" y1="115" x2="300" y2="160" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-            <text x="120" y="87" text-anchor="middle" font-size="22" fill="#C9A84C" opacity="0.8">☾</text>
-            <text x="220" y="68" text-anchor="middle" font-size="24" fill="#FFE87C" opacity="0.9">★</text>
-            <text x="300" y="92" text-anchor="middle" font-size="18" fill="#C9A84C" opacity="0.7">✦</text>
-            <!-- Ground silhouette children -->
-            <ellipse cx="160" cy="175" rx="20" ry="28" fill="rgba(201,168,76,0.2)"/>
-            <ellipse cx="240" cy="175" rx="18" ry="25" fill="rgba(201,168,76,0.15)"/>
-          </svg>
+          <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1584976717284-620ef72152cd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoaWxkcmVuJ3MlMjBkZWxpZ2h0JTIwZWlkfGVufDB8fDB8fHww'); background-size: cover;"></div>
         </div>
         <div class="gallery-overlay">
           <div class="gallery-overlay-text">Children's Delight</div>
@@ -1118,26 +1021,7 @@
     <div class="gallery-item" data-title="Night of Stars" data-desc="As darkness falls, a million stars bear witness to a million prayers — this is the blessed night of Eid." onclick="openLightbox(this)">
       <div class="gallery-inner">
         <div class="gallery-bg" style="background: radial-gradient(ellipse at 50% 30%, #0D0520 0%, #030108 100%); min-height:200px;">
-          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
-            <defs>
-              <radialGradient id="moonGlow" cx="50%" cy="30%"><stop offset="0%" stop-color="#C9A84C" stop-opacity="0.3"/><stop offset="100%" stop-color="transparent"/></radialGradient>
-            </defs>
-            <rect width="400" height="200" fill="url(#moonGlow)"/>
-            <text x="200" y="75" text-anchor="middle" font-size="55" fill="#C9A84C" opacity="0.85">☾</text>
-            <!-- Stars field -->
-            <text x="40" y="30" font-size="12" fill="#FFE87C" opacity="0.7">★</text>
-            <text x="80" y="50" font-size="8" fill="#FFE87C" opacity="0.5">✦</text>
-            <text x="140" y="25" font-size="6" fill="#FFE87C" opacity="0.6">★</text>
-            <text x="260" y="30" font-size="10" fill="#FFE87C" opacity="0.5">★</text>
-            <text x="320" y="20" font-size="8" fill="#FFE87C" opacity="0.7">✦</text>
-            <text x="360" y="45" font-size="12" fill="#FFE87C" opacity="0.4">★</text>
-            <text x="20" y="80" font-size="6" fill="#FFE87C" opacity="0.5">✦</text>
-            <text x="370" y="90" font-size="8" fill="#FFE87C" opacity="0.6">★</text>
-            <text x="100" y="100" font-size="5" fill="#FFE87C" opacity="0.4">★</text>
-            <text x="300" y="95" font-size="7" fill="#FFE87C" opacity="0.5">✦</text>
-            <!-- Horizon silhouette -->
-            <path d="M0,155 Q100,135 150,145 Q200,135 250,150 Q310,130 380,145 L400,150 L400,200 L0,200 Z" fill="rgba(0,0,0,0.7)"/>
-          </svg>
+          <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1590092794015-bce5431c83f4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlnaHRzJTIwb2YlMjBzdGFyJTIwZWlkfGVufDB8fDB8fHww'); background-size: cover;"></div>
         </div>
         <div class="gallery-overlay">
           <div class="gallery-overlay-text">Night of Stars</div>
@@ -1209,7 +1093,7 @@
     </h2>
     <div class="surprise-arabic">عيد مبارك يا صديقي</div>
     <p class="surprise-msg" id="surprise-text">
-      "On this sacred day of sacrifice and devotion, I wanted you to know — <em style="color:var(--gold)">you are truly cherished</em>. Your smile brightens every room, your kindness touches every heart you encounter. May Allah reward your goodness a thousandfold, fill your home with laughter, your heart with peace, and your path with His divine light. This Eid, I celebrate not just the festival — I celebrate the blessing of having you in my life."
+      "Is qurbani aur aqeedat ke mubarak din par, main chahta tha ke aap ko pata ho — <em style="color:var(--gold)">aap sach mein bohat pyaare hain</em>.Aapki smile har jagah roshni bhar deti hai, aapki kindness har us dil ko touch karti hai jis se aap milte hain. Allah aapki nekiyon ka hazaar guna ajar de, aapke ghar ko hasi se bhar de, dil ko sukoon se, aur raaste ko apni divine roshni se roshan kare. Is Eid par, main sirf tyohaar celebrate nahi kar raha — main wo blessing celebrate kar raha hoon ke aap meri life mein hain.    🌙✨"
     </p>
     <div class="gold-line"></div>
     <p style="font-family:var(--font-ui);font-size:0.7rem;letter-spacing:0.5em;text-transform:uppercase;color:var(--text-muted);margin-top:1.5rem;">
@@ -1275,7 +1159,7 @@
     <div class="gift-reveal-content" id="gift-reveal">
       <div class="gift-message-card">
         <p class="gift-message-text">
-          "My dearest friend — this website, crafted with every pixel of care, is my gift to you this Eid. But the real gift is something no screen can hold: it is the <em style="color:var(--gold)">du'a I make for you</em> — that Allah fills your days with radiant joy, blesses every step you take, eases every hardship you face, and surrounds you always with love. May your family thrive, your goals be achieved, and your heart know the deepest peace. You deserve every happiness this world and the next can offer. Eid Mubarak, my beautiful friend. You are forever in my prayers. ❤️"
+          "Mere pyaare dost — yeh website, jo har pixel mein care se banayi gayi hai, tumhare liye meri Eid ki gift hai. Lekin asli gift woh hai jo koi screen hold nahi kar sakti:woh hai meri <em style="color:var(--gold)">dua jo main tumhare liye karta hoon </em> — ke Allah tumhare din roshan khushi se bharde, tumhara har qadam mubarak kare, har mushkil aasaan kare, aur tumhein hamesha pyaar se ghera rakhe. Tumhari family khush rahe, tumhare goals poore hon, aur tumhara dil gehri sukoon jaane. Tum is duniya aur akhirat ki har khushi ke haqdaar ho. Eid Mubarak, mere khubsoorat dost. Tum hamesha meri duaon mein ho. ❤️"
         </p>
         <span class="gift-signature">— With love &amp; duas, always ✦</span>
       </div>
@@ -1308,9 +1192,94 @@
 
 <script>
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// AUDIO — declared first so onclick never hits TDZ
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+var audioPlaying = false;
+
+function toggleAudio() {
+  var audioEl = document.getElementById('bg-audio');
+  var iconEl  = document.getElementById('audio-icon');
+  var btnEl   = document.getElementById('audio-toggle');
+  if (audioPlaying) {
+    audioEl.pause();
+    audioPlaying = false;
+    iconEl.textContent = '🔇';
+    btnEl.style.boxShadow = '';
+  } else {
+    audioEl.volume = 0.25;
+    var p = audioEl.play();
+    if (p !== undefined) {
+      p.then(function() {
+        audioPlaying = true;
+        iconEl.textContent = '🔊';
+        btnEl.style.boxShadow = '0 0 20px rgba(201,168,76,0.6)';
+      }).catch(function(e) {
+        console.warn('Audio blocked:', e);
+        iconEl.textContent = '🎵';
+      });
+    }
+  }
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// COUNTDOWN — declared first, runs immediately
+// Eid Al-Adha 1447H = 27 May 2026
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+var EID_DATE = new Date(2026, 4, 27, 0, 0, 0); // Month is 0-indexed: 4 = May
+
+function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+function runCountdown() {
+  var now  = new Date();
+  var diff = EID_DATE.getTime() - now.getTime();
+
+  var daysEl  = document.getElementById('cd-days');
+  var hoursEl = document.getElementById('cd-hours');
+  var minsEl  = document.getElementById('cd-mins');
+  var secsEl  = document.getElementById('cd-secs');
+  var titleEl = document.querySelector('.countdown-title');
+  var celebEl = document.getElementById('celeb-msg');
+
+  if (!daysEl) return; // DOM not ready yet
+
+  if (diff > 0) {
+    // Counting DOWN to Eid
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000)  / 60000);
+    var s = Math.floor((diff % 60000)    / 1000);
+    daysEl.textContent  = pad2(d);
+    hoursEl.textContent = pad2(h);
+    minsEl.textContent  = pad2(m);
+    secsEl.textContent  = pad2(s);
+    if (titleEl) titleEl.innerHTML = 'Countdown to<br><em style="color:var(--gold);font-style:italic;font-family:var(--font-body)">Eid Al-Adha 2026</em>';
+    if (celebEl) celebEl.style.display = 'none';
+  } else {
+    // Eid has arrived — count UP from Eid
+    var elapsed = now.getTime() - EID_DATE.getTime();
+    var d = Math.floor(elapsed / 86400000);
+    var h = Math.floor((elapsed % 86400000) / 3600000);
+    var m = Math.floor((elapsed % 3600000)  / 60000);
+    var s = Math.floor((elapsed % 60000)    / 1000);
+    daysEl.textContent  = pad2(d);
+    hoursEl.textContent = pad2(h);
+    minsEl.textContent  = pad2(m);
+    secsEl.textContent  = pad2(s);
+    if (titleEl) titleEl.innerHTML = 'Celebrating Since<br><em style="color:var(--gold);font-style:italic;font-family:var(--font-body)">Eid Al-Adha 1447H ✦</em>';
+    if (celebEl) celebEl.style.display = 'block';
+  }
+}
+
+// Start countdown as soon as DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  runCountdown();
+  setInterval(runCountdown, 1000);
+});
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // LOADER
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-let pct = 0;
+var pct = 0;
 const pctEl = document.getElementById('loader-pct');
 const pctTimer = setInterval(() => {
   pct = Math.min(pct + Math.random() * 3, 100);
@@ -1683,34 +1652,7 @@ document.querySelectorAll('[data-tilt]').forEach(el => {
   });
 });
 
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// COUNTDOWN TIMER
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Eid Al-Adha 2025 (approx June 7, 2025)
-const eidDate = new Date('2025-06-07T00:00:00');
-
-function updateCountdown() {
-  const now = new Date();
-  const diff = now - eidDate; // ms since Eid
-
-  if (diff < 0) {
-    // Count down to Eid
-    const abs = -diff;
-    document.getElementById('cd-days').textContent = String(Math.floor(abs/86400000)).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(Math.floor((abs%86400000)/3600000)).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(Math.floor((abs%3600000)/60000)).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(Math.floor((abs%60000)/1000)).padStart(2,'0');
-    document.querySelector('.countdown-title').innerHTML = `Countdown to<br><em style="color:var(--gold);font-style:italic;font-family:var(--font-body)">Eid Al-Adha</em>`;
-  } else {
-    // Count up since Eid
-    document.getElementById('cd-days').textContent = String(Math.floor(diff/86400000)).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(Math.floor((diff%60000)/1000)).padStart(2,'0');
-  }
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
+// (Countdown handled at top of script)
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // GALLERY LIGHTBOX
@@ -1787,22 +1729,7 @@ function launchConfetti() {
   animConf();
 }
 
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// AUDIO
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-const audio = document.getElementById('bg-audio');
-let audioPlaying = false;
-function toggleAudio() {
-  if (audioPlaying) {
-    audio.pause(); audioPlaying = false;
-    document.getElementById('audio-icon').textContent = '🔇';
-  } else {
-    audio.volume = 0.3;
-    audio.play().catch(()=>{});
-    audioPlaying = true;
-    document.getElementById('audio-icon').textContent = '🔊';
-  }
-}
+// (Audio handled at top of script)
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // MOBILE MENU
