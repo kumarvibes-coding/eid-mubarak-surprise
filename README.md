@@ -147,14 +147,14 @@ At the top of `<style>`, edit:
 ### Change Eid Date
 In the JavaScript section, find:
 ```javascript
-const eidDate = new Date('2025-06-07T00:00:00');
+var EID_DATE = new Date(2026, 4, 27, 0, 0, 0);
 ```
 Update to the correct date for your year.
 
 ### Add Background Music
 Replace the audio source URL or add a local file:
 ```html
-<audio id="bg-audio" loop>
+<audio id="bg-audio" loop crossorigin="anonymous">
   <source src="your-music.mp3" type="audio/mpeg">
 </audio>
 ```
